@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  font-family: 'Titillium Web', sans-serif;
 }
 
 .main {
@@ -20,7 +21,6 @@ body {
   font-size: 24px;
   font-weight: bold;
   color: #F9FAF8;
-  margin: 16px;
 }
 
 .header-links {
@@ -31,33 +31,56 @@ body {
   gap: 16px;
 }
 
+.header-logo,
+.header-links {
+  margin: 0 128px;
+}
+
 .hero {
   background-color: #1f2937;
   color: white;
   display: flex;
-  justify-content: center;
-  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+  padding: 64px 0px;
+}
+
+.hero-left {
+  margin-left: 128px;
+  width: 450px;
 }
 
 .hero-header {
   font-size: 48px;
   font-weight: bold;
+  line-height: 1;
 }
 
 .hero-desc,
-header-links {
+.header-links {
   color: #E5E7EB;
   font-size: 18px;
 }
 
+.hero-desc {
+  margin: 8px 0;
+}
+
 .hero-button {
-  color: #3882F6;
+  background-color: #3882F6;
+  border-radius: 8px;
+  padding: 8px 16px;
+  border-style: none;
+  color: white;
+  font-weight: bold;
+  margin: 0;
 }
 
 .hero-image {
-  width: 500px;
+  width: 450px;
   height: 200px;
   object-fit: cover;
+  margin-right: 128px;
 }
 
 .information {
@@ -66,30 +89,88 @@ header-links {
   align-items: center;
 }
 
+.card-pic {
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid;
+  border-color: #3882F6;
+}
+
 .information-header {
   font-size: 36px;
   font-weight: bold;
   color: #1F2937;
+  margin-top: 32px;
 }
 
 .cards {
   display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.card {
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 32px;
 }
 
 .quote {
   background-color: #E5E7EB;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .quote-text {
-  font-size: 36px;
+  font-size: 24px;
   font-style: italic;
   color: #1F2937;
+  width: 700px;
+  margin-top: 60px;
+}
+
+.signed {
+  margin-left: 400px;
+  font-weight: bold;
+  margin-bottom: 32px;
+  font-size: 24px;
 }
 
 .modal  {
   background-color: #3882F6;
-  margin: 50px;
+  margin: 64px 128px;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  color: white;
+  padding: 32px;
+}
+
+.modal-desc{
+  margin-left: 64px;
+}
+
+.modal-desc-header{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.modal-button{
+  margin-right: 64px;
+  padding: 4px 16px;
+  background-color: #3882F6;
+  color: white;
+  border-color: white;
+  border: 2px solid;
+  border-radius: 8px;
+  font-weight: bold;
 }
 
 .footer {
