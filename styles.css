@@ -40,13 +40,13 @@ body {
   background-color: #1f2937;
   color: white;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 64px 0px;
+  gap: 120px;
 }
 
 .hero-left {
-  margin-left: 128px;
   width: 450px;
 }
 
@@ -80,7 +80,6 @@ body {
   width: 450px;
   height: 200px;
   object-fit: cover;
-  margin-right: 128px;
 }
 
 .information {
@@ -142,15 +141,21 @@ body {
   font-size: 24px;
 }
 
+.call-to-action {
+  display: flex;
+  justify-content: center;
+}
+
 .modal  {
   background-color: #3882F6;
   margin: 64px 128px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   border-radius: 8px;
   color: white;
   padding: 32px;
+  gap: 120px;
 }
 
 .modal-desc{
